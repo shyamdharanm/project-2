@@ -1,4 +1,12 @@
-section span {
+body {
+    margin: 0;
+    background: #eee;
+  }
+  section {
+    height: 100vh;
+    background: coral;
+  }
+  section span {
     margin: 0;
     font-size: 400%;
     text-align: center;
