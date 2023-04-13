@@ -5,9 +5,9 @@ body {
 }
 
 header {
-	background-color: #333;
+	background-color: rgb(3, 10, 31);
 	color: #fff;
-	padding: 20px;
+	padding: 10px;
 	text-align: center;
 }
 
