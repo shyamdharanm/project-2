@@ -1,7 +1,24 @@
-p{
-    padding: 50px;
-    font-size: 32px;
-    font-weight: bold;
-    text-align: center;
-    background: #dbdfe5;
+body{
+    background-color: darksalmon;
+}
+.fa{
+color: blue;
+}
+.layout-inside{
+background-color: beige;
+padding:  60px 5px;
+text-align: center;
+margin: 20px 10px;
+}
+a{
+    border-bottom: 1px solid blue;
+}
+span{
+    font-size:15px;
+}
+.layout{
+padding: 60px;
+}
+.content{
+margin: 20px 0px;
 }
