@@ -5,5 +5,5 @@ span.innerHTML="click me";
 button.addEventListener("click",foo);
 document.body.append(button);
 function foo(){
-    alert(parseInt(prompt(enter your age)));
+    alert(parseInt(prompt("enter your age")));
 }
