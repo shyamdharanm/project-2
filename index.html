@@ -7,14 +7,8 @@
   <title>Document</title>
 </head>
 <body>
-  <div class="wrapper">
-    <h1>Counts Textarea Content</Textarea></h1>
-    <textarea name="box" id="box" maxlength="300" placeholder="Type Here"autofocus></textarea>
-    <div id="the-count">
-      <span id="current">0</span>
-      <span id="maximum">/ 600</span>
-    </div>
-  </div>
+  <textarea name="message" onkeyup="countChars(this);"></textarea>
+<p id="charNum">0 characters</p>
   <script src="script.js"></script>
 </body>
 </html>
