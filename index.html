@@ -8,8 +8,46 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
-  <h1>test run</h1>
-  
+  <form id="content">
+
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="fname">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lname">
+
+    <label for="address">Address</label>
+    <input type="text" id="address" name="address">
+
+    <label for="pin">Pincode</label>
+    <input type="text" id="pin" name="pin">
+
+    <label for="drop">Gender</label>
+    <select id="drop" name="drop">
+        <option value="" disabled selected>select one..</option>
+
+        <option value="male">male</option>
+        <option value="female">female</option>
+    </select>
+
+    <label for="drop2">Choice of food</label>
+    <select name="drop2" id="drop2">
+        <option value="" disabled selected>select one..</option>
+
+        <option value="pizza">pizza</option>
+        <option value="burger">burger</option>
+        <option value="mandhi">mandhi</option>
+
+    </select>
+
+    <label for="city">city</label>
+    <input type="text" id="city" name="city">
+
+    <label for="state">state</label>
+    <input type="text" id="state" name="state">
+
+    <button type="submit" >submit</button>
+</form>
  <script src="script.js"></script> 
 </body>
 </html>
