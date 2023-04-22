@@ -1,2 +1,3 @@
-var heading=document.querySelector(p);
-console.log(e);
+x=10;
+document.write(x);
+var x;
