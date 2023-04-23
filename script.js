@@ -10,9 +10,9 @@ inputdate.style.width="30%"
 var button=document.createElement("button");
 button.setAttribute("type","button");
 button.classList.add("btn","btn-primary");
-button.innerHTML="Submit";
+button.innerHTML="display data";
 button.style.margin="10px"
-button.addEventListener("click",Submit);
+button.addEventListener("click",displaydata);
 
 var outputdiv=document.createElement("div");
 outputdiv.style.fontSize="20px";
