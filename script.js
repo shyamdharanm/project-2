@@ -48,5 +48,13 @@ function displaydata(){
 
   var monthdiff=yeardiff*12+((currentdate.getMonth()+1)-(birthdate.getMonth()+1));
   console.log(`Month Diff:${monthdiff}`);
+  var result = document.getElementById("result");
+        result.innerHTML = `<p>Milliseconds: ${milliseconddiff}</p>
+          <p>Seconds: ${secondsdiff}</p>
+          <p>Minutes: ${minutediff}</p>
+          <p>Hours: ${hoursdiff}</p>
+          <p>Days: ${daydiff}</p>
+          <p>Years: ${yeardiff}</p>
+          <p>Months: ${monthdiff}</p>`;
 
 }
