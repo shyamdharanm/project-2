@@ -1,4 +1,3 @@
-//Date Manipulation using DOM 
 var div=document.createElement("div");
 div.style.textAlign="center";
 div.style.marginTop="150px";
@@ -11,11 +10,16 @@ inputdate.style.width="30%"
 var button=document.createElement("button");
 button.setAttribute("type","button");
 button.classList.add("btn","btn-primary");
-button.innerHTML="Display Data";
+button.innerHTML="Submit";
 button.style.margin="10px"
+button.addEventListener("click",Submit);
 
-button.addEventListener("click",displaydata);
-div.append(inputdate,button);
+var outputdiv=document.createElement("div");
+outputdiv.style.fontSize="20px";
+
+
+
+div.append(inputdate,button,outputdiv);
 document.body.append(div);
 
 function displaydata(){
@@ -48,13 +52,15 @@ function displaydata(){
 
   var monthdiff=yeardiff*12+((currentdate.getMonth()+1)-(birthdate.getMonth()+1));
   console.log(`Month Diff:${monthdiff}`);
-  var result = document.getElementById("result");
-        result.innerHTML = `<p>Milliseconds: ${milliseconddiff}</p>
-          <p>Seconds: ${secondsdiff}</p>
-          <p>Minutes: ${minutediff}</p>
-          <p>Hours: ${hoursdiff}</p>
-          <p>Days: ${daydiff}</p>
-          <p>Years: ${yeardiff}</p>
-          <p>Months: ${monthdiff}</p>`;
 
+  outputdiv.innerHTML=` 
+  Given date is ${birthdate} <br>
+  year is ${yeardiff}<br>
+  Month is  ${monthdiff}<br>
+  day is ${daydiff}<br>
+  hour ${hoursdiff}<br>
+  minute ${minutediff}<br>
+  seconds ${secondsdiff}<br>
+  milliseconds ${milliseconddiff}<br>
+  `;
 }
