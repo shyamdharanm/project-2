@@ -1,3 +1,4 @@
+//Date Manipulation using DOM 
 var div=document.createElement("div");
 div.style.textAlign="center";
 div.style.marginTop="150px";
@@ -5,47 +6,47 @@ div.style.marginTop="150px";
 var inputdate=document.createElement("input");
 inputdate.setAttribute("type","date");
 inputdate.id="dob";
-inputdate.style.width="30%";
+inputdate.style.width="30%"
 
 var button=document.createElement("button");
 button.setAttribute("type","button");
 button.classList.add("btn","btn-primary");
-button.innerHTML="Display data";
-button.style.margin="10px";
+button.innerHTML="Display Data";
+button.style.margin="10px"
 
 button.addEventListener("click",displaydata);
 div.append(inputdate,button);
 document.body.append(div);
 
 function displaydata(){
-var input=document.getElementById("dob").ariaValueMax;
-console.log(typeof(input));
+  var input=document.getElementById("dob").value;
+  console.log(typeof(input));
 
-var birthdate=new Date();
-console.log(birthdate);
+  var birthdate=new Date(input);
+  console.log(birthdate);
 
-var currentdate=new Date();
-console.log(currentdate);
+  var currentdate=new Date();
+  console.log(currentdate);
 
-var milliseconddiff=parseInt(currentdate.getTime())-parseInt(birthdate.getTime());
-console.log(`milliseconddiff:${milliseconddiff}`);
+  var milliseconddiff=parseInt(currentdate.getTime())-parseInt(birthdate.getTime());
+  console.log(`Milliseconnds: ${milliseconddiff}`);
 
-var seconddiff=Math.floor(milliseconddiff/1000);
-console.log(`seconddidd:${seconddiff}`);
+  var secondsdiff=Math.floor(milliseconddiff/1000);
+  console.log(`Seconds Diff:${secondsdiff}`);
 
-var minutediff=Math.floor(seconddiff/60);
-console.log(`minutediff:${minutediff}`);
+  var minutediff=Math.floor(secondsdiff/60);
+  console.log(`Minutes Diff:${minutediff}`);
 
-var hoursdiff=Math.floor(minute/60);
-console.log(`hoursdiff:${hoursdiff}`);
+  var hoursdiff=Math.floor(minutediff/60);
+  console.log(`Hours Diff:${hoursdiff}`);
 
-var daydiff=Math.floor(hoursdiff/24);
-console.log(`daydiff:${daydiff}`);
+  var daydiff=Math.floor(hoursdiff/24);
+  console.log(`Day Diff:${daydiff}`);
 
-var yeardiff=currentdate.getFullYear()-birthdate.getFullYear();
-console.log(`yeardiff:${yeardiff}`);
+  var yeardiff=currentdate.getFullYear()-birthdate.getFullYear();
+  console.log(`Year diff:${yeardiff}`);
 
-var monthdiff=yeardiff*12+(currentdate.getMonth()+1)-(birthdate.getMonth()+1);
-console.log(`monthdiff:${monthdiff}`); 
+  var monthdiff=yeardiff*12+((currentdate.getMonth()+1)-(birthdate.getMonth()+1));
+  console.log(`Month Diff:${monthdiff}`);
+
 }
-
